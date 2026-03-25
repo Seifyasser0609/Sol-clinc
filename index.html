@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SÓL The Clinic — Biological Regeneration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="sol.css"/>
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor"><div class="cursor-dot" id="cursorDot"></div></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- =========================================
+     HEADER
+     ========================================= -->
+<header id="mainHeader">
+  <a href="#" class="nav-logo">SÓ<span>L</span></a>
+
+  <ul class="nav-links">
+    <li><a href="#">Philosophy</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Clinics</a></li>
+    <li><a href="#">Journal</a></li>
+  </ul>
+
+  <button class="nav-cta">Book Consultation</button>
+
+  <div class="nav-toggle" id="navToggle" role="button" aria-label="Menu">
+    <span></span><span></span>
+  </div>
+</header>
+
+<!-- =========================================
+     HERO
+     ========================================= -->
+<section class="hero" id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+
+  <div class="hero-brand" id="heroEyebrow">
+    <div class="hero-brand-line"></div>
+    <span class="hero-brand-tag">Cairo · Biological Regeneration</span>
+    <div class="hero-brand-line"></div>
+  </div>
+
+  <h1 class="hero-headline" id="heroHeadline">
+    SÓL
+  </h1>
+
+  <p class="hero-brand-sub" id="heroSub">
+    The Art of <em>Cellular</em> Longevity
+  </p>
+
+  <p class="hero-sub" id="heroDesc">
+    Moving beyond restoration to proactive skin longevity.<br/>Where science meets artistry.
+  </p>
+
+  <div class="hero-actions" id="heroActions">
+    <a href="tel:01003264266" class="btn-primary">
+      Book a Consultation
+      <i class="fa-solid fa-arrow-right" style="font-size:0.55rem"></i>
+    </a>
+    <a href="#services" class="btn-ghost">
+      Explore Services <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+
+  <div class="hero-scroll" id="heroScroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+
+  <div class="hero-locations" id="heroLocations">
+    <div class="loc-badge">First Mall, Four Seasons · Giza</div>
+    <div class="loc-badge">H1, 5A The Waterway · New Cairo</div>
+  </div>
+</section>
+
+<!-- =========================================
+     MARQUEE
+     ========================================= -->
+<div class="marquee-strip">
+  <div class="marquee-track" id="marqueeTrack">
+    <!-- Items duplicated for infinite scroll -->
+    <div class="marquee-item"><span class="dot"></span> Corneotherapy</div>
+    <div class="marquee-item"><span class="dot"></span> Biostimulatory Injectables</div>
+    <div class="marquee-item"><span class="dot"></span> Facial Harmonization</div>
+    <div class="marquee-item"><span class="dot"></span> Laser Resurfacing</div>
+    <div class="marquee-item"><span class="dot"></span> Regenerative Medicine</div>
+    <div class="marquee-item"><span class="dot"></span> Skin Longevity</div>
+    <div class="marquee-item"><span class="dot"></span> Barrier Health</div>
+    <div class="marquee-item"><span class="dot"></span> Cellular Vitality</div>
+    <!-- Duplicate -->
+    <div class="marquee-item"><span class="dot"></span> Corneotherapy</div>
+    <div class="marquee-item"><span class="dot"></span> Biostimulatory Injectables</div>
+    <div class="marquee-item"><span class="dot"></span> Facial Harmonization</div>
+    <div class="marquee-item"><span class="dot"></span> Laser Resurfacing</div>
+    <div class="marquee-item"><span class="dot"></span> Regenerative Medicine</div>
+    <div class="marquee-item"><span class="dot"></span> Skin Longevity</div>
+    <div class="marquee-item"><span class="dot"></span> Barrier Health</div>
+    <div class="marquee-item"><span class="dot"></span> Cellular Vitality</div>
+  </div>
+</div>
+
+<!-- =========================================
+     PRESS / AS SEEN IN
+     ========================================= -->
+<div class="press-strip">
+  <div class="press-inner">
+    <span class="press-label">As Seen In</span>
+    <div class="press-divider"></div>
+    <div class="press-logos">
+      <span class="press-logo-item">Vogue Arabia</span>
+      <span class="press-logo-item">Harper's Bazaar</span>
+      <span class="press-logo-item">Tatler</span>
+      <span class="press-logo-item">Grazia Middle East</span>
+      <span class="press-logo-item">The Sunday Times</span>
+      <span class="press-logo-item">Condé Nast Traveller</span>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================
+     PHILOSOPHY
+     ========================================= -->
+<section class="philosophy" id="philosophy">
+  <div class="philosophy-image reveal-left">
+    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=900&q=85" alt="Clinical facial treatment"/>
+  </div>
+  <div class="philosophy-content reveal-right">
+    <div class="section-eyebrow">The Philosophy</div>
+    <h2 class="section-heading">
+      Skin as a Living<br/><em>Ecosystem</em>
+    </h2>
+    <div class="divider-gold"></div>
+    <p class="body-text">
+      At SÓL, we believe true beauty begins at the cellular level. Our approach integrates <strong>Corneotherapy</strong>—a remedial methodology centred on the repair and maintenance of the skin barrier defense systems. We don't merely treat symptoms; we cultivate biological resilience that endures.
+    </p>
+    <p class="body-text" style="margin-top:1.2rem">
+      Every protocol is designed with a single north star: <strong>long-term structural integrity</strong>. Science-led. Artistry-executed. Cairo-based.
+    </p>
+
+    <div class="stat-row">
+      <div class="stat-item">
+        <div class="stat-number">18<span>+</span></div>
+        <div class="stat-label">Years Expertise</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">2<span></span></div>
+        <div class="stat-label">Cairo Branches</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">4<span>k+</span></div>
+        <div class="stat-label">Clients Served</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     SERVICES — BENTO
+     ========================================= -->
+<section class="services" id="services">
+  <div class="services-header reveal">
+    <h2 class="services-heading">
+      Signature<br/><em>Treatments</em>
+    </h2>
+    <a href="#" class="services-link">
+      View All Services <i class="fa-solid fa-arrow-right" style="font-size:0.5rem"></i>
+    </a>
+  </div>
+
+  <div class="bento-grid reveal">
+    <!-- Large card -->
+    <div class="bento-card bento-card--large">
+      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=900&q=85" alt="Facial Harmonization"/>
+      <div class="bento-content">
+        <div class="bento-num">01</div>
+        <h3 class="bento-title">Facial<br/>Harmonization</h3>
+        <p class="bento-desc">A bespoke assessment of your unique features to create balanced, natural proportions using advanced structural techniques.</p>
+        <a href="#" class="bento-arrow">Explore Treatment <i class="fa-solid fa-arrow-right" style="font-size:0.5rem"></i></a>
+      </div>
+    </div>
+
+    <!-- Medium card -->
+    <div class="bento-card bento-card--med">
+      <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=900&q=85" alt="Biostimulatory Injectables"/>
+      <div class="bento-content">
+        <div class="bento-num">02</div>
+        <h3 class="bento-title">Biostimulatory<br/>Injectables</h3>
+        <a href="#" class="bento-arrow">Explore <i class="fa-solid fa-arrow-right" style="font-size:0.5rem"></i></a>
+      </div>
+    </div>
+
+    <!-- Text card -->
+    <div class="bento-card bento-card--text">
+      <div class="bento-text-content">
+        <p class="bento-quote">"We don't restore. We regenerate."</p>
+        <div>
+          <div class="bento-author">— SÓL Doctrine</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wide card -->
+    <div class="bento-card bento-card--wide">
+      <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=900&q=85" alt="Laser Resurfacing"/>
+      <div class="bento-content">
+        <div class="bento-num">03</div>
+        <h3 class="bento-title">Advanced Laser<br/>Resurfacing</h3>
+        <p class="bento-desc">Precision technology to refine skin texture, erase pigmentation, and restore the skin's natural reflective quality.</p>
+        <a href="#" class="bento-arrow">Explore Treatment <i class="fa-solid fa-arrow-right" style="font-size:0.5rem"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     RESULTS METRICS
+     ========================================= -->
+<section class="results-metrics">
+  <div class="results-inner">
+    <div class="results-header reveal">
+      <h2 class="results-heading">
+        Measurable<br/><em>Results</em>
+      </h2>
+      <p class="results-note">Clinical outcome data based on internal audit of 400+ treated clients across both locations. Results vary by individual.</p>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric-card reveal">
+        <div class="metric-value" data-target="94">0<span style="font-size:1.8rem">%</span></div>
+        <div class="metric-label">of clients reported visible skin barrier improvement after a single protocol cycle</div>
+        <div class="metric-bar-track"><div class="metric-bar-fill" data-width="94"></div></div>
+        <div class="metric-source">Based on 3-month post-treatment assessment</div>
+      </div>
+      <div class="metric-card reveal" style="transition-delay:0.1s">
+        <div class="metric-value" data-target="87">0<span style="font-size:1.8rem">%</span></div>
+        <div class="metric-label">reduction in visible pigmentation following our Advanced Laser Resurfacing protocol</div>
+        <div class="metric-bar-track"><div class="metric-bar-fill" data-width="87"></div></div>
+        <div class="metric-source">Average across 180+ laser resurfacing cases</div>
+      </div>
+      <div class="metric-card reveal" style="transition-delay:0.2s">
+        <div class="metric-value" data-target="91">0<span style="font-size:1.8rem">%</span></div>
+        <div class="metric-label">client satisfaction score across all facial harmonization treatments in 2025</div>
+        <div class="metric-bar-track"><div class="metric-bar-fill" data-width="91"></div></div>
+        <div class="metric-source">Independent post-treatment survey, Q4 2025</div>
+      </div>
+      <div class="metric-card reveal" style="transition-delay:0.3s">
+        <div class="metric-value" data-target="78">0<span style="font-size:1.8rem">%</span></div>
+        <div class="metric-label">of biostimulatory injectable clients returned for a second annual cycle</div>
+        <div class="metric-bar-track"><div class="metric-bar-fill" data-width="78"></div></div>
+        <div class="metric-source">Retention data, First Mall &amp; The Waterway combined</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     BEFORE / AFTER
+     ========================================= -->
+<section class="before-after" id="results">
+  <div class="ba-inner">
+    <div class="ba-header reveal">
+      <div class="section-eyebrow" style="justify-content:center">Client Results</div>
+      <h2 class="section-heading" style="text-align:center; margin-top:1.2rem">
+        Before &amp; <em>After</em>
+      </h2>
+      <p class="body-text" style="text-align:center; margin: 1.2rem auto 0; max-width:50ch">
+        Real results from real clients. All photographs are unretouched and taken under consistent clinical lighting conditions.
+      </p>
+    </div>
+
+    <!-- Treatment tabs -->
+    <div class="ba-tabs reveal">
+      <button class="ba-tab active" data-panel="ba-facial">Facial Harmonization</button>
+      <button class="ba-tab" data-panel="ba-laser">Laser Resurfacing</button>
+      <button class="ba-tab" data-panel="ba-bio">Biostimulatory</button>
+    </div>
+
+    <!-- Panel: Facial -->
+    <div class="ba-panel-group active" id="ba-facial">
+      <div class="ba-panel">
+        <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=700&q=80&grayscale" alt="Before facial harmonization"/>
+        <div class="ba-label ba-label--before">Before</div>
+        <div class="ba-tag">Initial Consultation · Week 0</div>
+      </div>
+      <div class="ba-panel">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=700&q=80" alt="After facial harmonization"/>
+        <div class="ba-label ba-label--after">After</div>
+        <div class="ba-tag">Post 3-Session Protocol · Week 12</div>
+      </div>
+    </div>
+
+    <!-- Panel: Laser -->
+    <div class="ba-panel-group" id="ba-laser">
+      <div class="ba-panel">
+        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=700&q=80&grayscale" alt="Before laser resurfacing"/>
+        <div class="ba-label ba-label--before">Before</div>
+        <div class="ba-tag">Initial Consultation · Week 0</div>
+      </div>
+      <div class="ba-panel">
+        <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=700&q=80" alt="After laser resurfacing"/>
+        <div class="ba-label ba-label--after">After</div>
+        <div class="ba-tag">Post 2-Session Protocol · Week 8</div>
+      </div>
+    </div>
+
+    <!-- Panel: Biostimulatory -->
+    <div class="ba-panel-group" id="ba-bio">
+      <div class="ba-panel">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=700&q=80&grayscale" alt="Before biostimulatory"/>
+        <div class="ba-label ba-label--before">Before</div>
+        <div class="ba-tag">Initial Consultation · Week 0</div>
+      </div>
+      <div class="ba-panel">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=700&q=80" alt="After biostimulatory"/>
+        <div class="ba-label ba-label--after">After</div>
+        <div class="ba-tag">Post Single-Session Protocol · Week 6</div>
+      </div>
+    </div>
+
+    <!-- Summary result cards -->
+    <div class="ba-cards">
+      <div class="ba-result-card reveal">
+        <div class="ba-result-num">+68%</div>
+        <div class="ba-result-label">Average skin elasticity improvement measured at 12-week follow-up</div>
+        <div class="ba-result-sub">Facial Harmonization Protocol</div>
+      </div>
+      <div class="ba-result-card reveal" style="transition-delay:0.1s">
+        <div class="ba-result-num">3 × </div>
+        <div class="ba-result-label">Collagen density increase observed post-biostimulatory injectable series</div>
+        <div class="ba-result-sub">Biostimulatory Injectables · Ultrasound analysis</div>
+      </div>
+      <div class="ba-result-card reveal" style="transition-delay:0.2s">
+        <div class="ba-result-num">11 yr</div>
+        <div class="ba-result-label">Average perceived age reduction reported by clients after full-protocol completion</div>
+        <div class="ba-result-sub">Patient self-assessment survey · n=214</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     PROCESS
+     ========================================= -->
+<section class="process">
+  <div class="process-inner">
+    <div class="process-header reveal">
+      <div class="section-eyebrow" style="justify-content:center">Our Approach</div>
+      <h2 class="section-heading" style="text-align:center; margin-top:1.2rem">
+        The SÓL <em>Protocol</em>
+      </h2>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step reveal" style="transition-delay:0s">
+        <div class="step-orb"><span class="step-num">I</span></div>
+        <h3 class="step-title">Skin Audit</h3>
+        <p class="step-desc">Comprehensive barrier analysis using advanced diagnostics to understand your skin's unique biological blueprint.</p>
+      </div>
+      <div class="process-step reveal" style="transition-delay:0.1s">
+        <div class="step-orb"><span class="step-num">II</span></div>
+        <h3 class="step-title">Protocol Design</h3>
+        <p class="step-desc">A bespoke treatment roadmap crafted exclusively for your biology, goals, and long-term longevity vision.</p>
+      </div>
+      <div class="process-step reveal" style="transition-delay:0.2s">
+        <div class="step-orb"><span class="step-num">III</span></div>
+        <h3 class="step-title">Clinical Precision</h3>
+        <p class="step-desc">Evidence-based interventions administered by our multidisciplinary team of doctors and physiotherapists.</p>
+      </div>
+      <div class="process-step reveal" style="transition-delay:0.3s">
+        <div class="step-orb"><span class="step-num">IV</span></div>
+        <h3 class="step-title">Ongoing Care</h3>
+        <p class="step-desc">Continuous monitoring and refinement to ensure your results evolve with your biology over time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     TEAM PROFILES
+     ========================================= -->
+<section class="team-profiles">
+  <div class="tp-inner">
+    <div class="tp-header reveal">
+      <div class="section-eyebrow" style="color:var(--gold)">The Clinicians</div>
+      <h2 class="section-heading" style="color:#fff; margin-top:1.2rem">
+        Meet the <em>Specialists</em>
+      </h2>
+    </div>
+
+    <div class="tp-grid">
+      <!-- Dr. Reem Nouman - FOUNDER (real) -->
+      <div class="tp-card reveal">
+        <div class="tp-photo">
+          <img src="https://www.elle.eg/wp-content/uploads/2025/04/RN-.jpeg" alt="Dr. Reem Nouman"/>
+          <div class="tp-photo-overlay"></div>
+        </div>
+        <div class="tp-info">
+          <h3 class="tp-name">Dr. Reem Nouman</h3>
+          <div class="tp-role">Founder · Dermatologist &amp; Aesthetic Physician</div>
+          <p class="tp-bio">Graduated from Ain Shams University. Specialist in Dermatology since 2014, trained at the EADV (European Academy for Dermatology and Venereology). Expert in evidence-based aesthetic medicine using exclusively FDA-approved products and latest technology — always enhancing your natural, unique look.</p>
+          <div class="tp-credentials">
+            <span class="tp-cred">MBBCh</span>
+            <span class="tp-cred">Dermatology Specialist</span>
+            <span class="tp-cred">EADV Trained</span>
+          </div>
+        </div>
+      </div>
+
+      
+  
+</section>
+
+<!-- =========================================
+     EXPERT TEAM (specialty cards)
+     ========================================= -->
+<section class="team">
+  <div class="team-inner">
+    <div class="team-header reveal">
+      <div class="section-eyebrow">Our Expertise</div>
+      <h2 class="section-heading" style="margin-top:1.2rem">
+        A Multidisciplinary<br/><em>Foundation</em>
+      </h2>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card reveal" style="transition-delay:0s">
+        <div class="team-icon"><i class="fa-solid fa-stethoscope"></i></div>
+        <div>
+          <h3 class="team-card-title">Medical Doctors</h3>
+          <p class="team-card-text">Our specialists in regenerative medicine lead every clinical intervention, ensuring the highest standards of safety, precision, and long-term outcomes.</p>
+        </div>
+      </div>
+      <div class="team-card reveal" style="transition-delay:0.1s">
+        <div class="team-icon"><i class="fa-solid fa-brain"></i></div>
+        <div>
+          <h3 class="team-card-title">Physiotherapists</h3>
+          <p class="team-card-text">Expert facial anatomists who understand the muscular architecture behind every movement, expression, and structural harmony.</p>
+        </div>
+      </div>
+      <div class="team-card reveal" style="transition-delay:0.15s">
+        <div class="team-icon"><i class="fa-solid fa-flask"></i></div>
+        <div>
+          <h3 class="team-card-title">Biomedical Professionals</h3>
+          <p class="team-card-text">Scientists who translate cutting-edge research into clinical protocols, ensuring our treatments remain at the frontier of regenerative science.</p>
+        </div>
+      </div>
+      <div class="team-card reveal" style="transition-delay:0.2s">
+        <div class="team-icon"><i class="fa-solid fa-sparkles" style="color:var(--gold)"></i></div>
+        <div>
+          <h3 class="team-card-title">Aesthetic Specialists</h3>
+          <p class="team-card-text">Artisans of refinement who blend technical mastery with an eye for proportion, harmony, and the subtlety that defines truly elevated results.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     TESTIMONIALS CAROUSEL
+     ========================================= -->
+<section class="testimonials-section">
+  <div class="ts-inner">
+    <div class="ts-header reveal">
+      <div class="section-eyebrow" style="justify-content:center">Client Voices</div>
+      <h2 class="section-heading" style="text-align:center; margin-top:1.2rem">
+        Transformations, <em>Shared</em>
+      </h2>
+    </div>
+
+    <div class="ts-carousel reveal">
+      <div class="ts-track-wrapper">
+        <div class="ts-track" id="tsTrack">
+
+          <!-- Card 1 -->
+          <div class="ts-card">
+            <div class="ts-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="ts-quote-mark">"</div>
+            <p class="ts-text">The most profound transformation I've experienced. SÓL doesn't just treat your skin—they reimagine your relationship with it entirely. My skin hasn't looked this radiant in over a decade.</p>
+            <div class="ts-footer">
+              <div class="ts-avatar" style="background:#e8d5a3; color:#0e0d0b; font-size:1rem">A</div>
+              <div>
+                <div class="ts-name">Amira K.</div>
+                <div class="ts-meta">Cairo Client · 2025</div>
+              </div>
+              <div class="ts-treatment">Facial Harmonization</div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="ts-card">
+            <div class="ts-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="ts-quote-mark">"</div>
+            <p class="ts-text">I've been to clinics in Paris, Dubai, and New York. Nothing compares. The science behind SÓL's protocols is unlike anything I've encountered—and the results speak for themselves.</p>
+            <div class="ts-footer">
+              <div class="ts-avatar" style="background:#c9a84c22; color:#c9a84c; font-size:1rem">S</div>
+              <div>
+                <div class="ts-name">Sarah M.</div>
+                <div class="ts-meta">Cairo Client · 2025</div>
+              </div>
+              <div class="ts-treatment">Biostimulatory</div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="ts-card">
+            <div class="ts-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="ts-quote-mark">"</div>
+            <p class="ts-text">After years of struggling with pigmentation, the Laser Resurfacing protocol at SÓL delivered in 8 weeks what nothing else had in 8 years. The team's precision and care are exceptional.</p>
+            <div class="ts-footer">
+              <div class="ts-avatar" style="background:#3a363022; color:#8a8070; font-size:1rem">N</div>
+              <div>
+                <div class="ts-name">Nour A.</div>
+                <div class="ts-meta">Cairo Client · 2024</div>
+              </div>
+              <div class="ts-treatment">Laser Resurfacing</div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="ts-card">
+            <div class="ts-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="ts-quote-mark">"</div>
+            <p class="ts-text">What sets SÓL apart is the philosophy. They don't sell you a treatment—they design a journey tailored entirely to you. I flew from Riyadh for my consultations and would do it again without hesitation.</p>
+            <div class="ts-footer">
+              <div class="ts-avatar" style="background:#e8d5a322; color:#c9a84c; font-size:1rem">R</div>
+              <div>
+                <div class="ts-name">Reem Al-F.</div>
+                <div class="ts-meta">International Client · 2025</div>
+              </div>
+              <div class="ts-treatment">Full Protocol</div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="ts-card">
+            <div class="ts-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="ts-quote-mark">"</div>
+            <p class="ts-text">Dr. Hartley's understanding of facial anatomy is breathtaking. My results look utterly natural—friends ask if I've simply been sleeping better. That's the SÓL difference.</p>
+            <div class="ts-footer">
+              <div class="ts-avatar" style="background:#f5f2ec; color:#0e0d0b; font-size:1rem">C</div>
+              <div>
+                <div class="ts-name">Charlotte B.</div>
+                <div class="ts-meta">Cairo Client · 2025</div>
+              </div>
+              <div class="ts-treatment">Facial Harmonization</div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="ts-card">
+            <div class="ts-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="ts-quote-mark">"</div>
+            <p class="ts-text">I came in sceptical. I left a convert. The corneotherapy approach healed a barrier that years of aggressive treatments had damaged. My skin finally feels like mine again.</p>
+            <div class="ts-footer">
+              <div class="ts-avatar" style="background:#c9a84c22; color:#c9a84c; font-size:1rem">L</div>
+              <div>
+                <div class="ts-name">Laila O.</div>
+                <div class="ts-meta">Cairo Client · 2024</div>
+              </div>
+              <div class="ts-treatment">Corneotherapy</div>
+            </div>
+          </div>
+
+        </div><!-- /ts-track -->
+      </div>
+
+      <div class="ts-controls">
+        <button class="ts-btn" id="tsPrev"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="ts-dots" id="tsDots"></div>
+        <button class="ts-btn" id="tsNext"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     LOCATIONS
+     ========================================= -->
+<section class="locations" id="clinics">
+  <div class="location-panel">
+    <img src="location1.png" alt="First Mall, Four Seasons Cairo"/>
+    <div class="location-overlay reveal">
+      <h3 class="location-city">First Mall</h3>
+      <p class="location-district">Four Seasons · Giza</p>
+      <a href="tel:01003264266" class="location-cta">
+        Book Now <i class="fa-solid fa-arrow-right" style="font-size:0.5rem"></i>
+      </a>
+    </div>
+  </div>
+  <div class="location-panel">
+    <img src="location2.png" alt="The Waterway New Cairo"/>
+    <div class="location-overlay reveal">
+      <h3 class="location-city">The Waterway</h3>
+      <p class="location-district">H1, 5A · New Cairo</p>
+      <a href="tel:01003264266" class="location-cta">
+        Book Now <i class="fa-solid fa-arrow-right" style="font-size:0.5rem"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     CTA
+     ========================================= -->
+<section class="cta-section">
+  <div class="cta-eyebrow reveal">Begin Your Journey</div>
+  <h2 class="cta-heading reveal">
+    Your Skin's Future<br/>Starts <em>Today</em>
+  </h2>
+  <p class="cta-sub reveal">
+    Reserve a private consultation with our clinical team. We'll craft a protocol as unique as your biology.
+  </p>
+  <a href="tel:01003264266" class="btn-cta-large reveal">
+    <span>Book a Private Consultation</span>
+    <i class="fa-solid fa-arrow-right"></i>
+  </a>
+  <p style="margin-top:1.5rem; font-size:0.65rem; color:var(--text-muted); letter-spacing:0.15em;" class="reveal">
+    01003264266
+  </p>
+</section>
+
+<!-- =========================================
+     FOOTER
+     ========================================= -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">SÓ<span>L</span></div>
+      <p class="footer-tagline">Boutique longevity clinic. Biological regeneration through science, artistry, and precision.</p>
+      <div class="footer-social">
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="social-link"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Treatments</div>
+      <ul class="footer-links">
+        <li><a href="#">Facial Harmonization</a></li>
+        <li><a href="#">Biostimulatory Injectables</a></li>
+        <li><a href="#">Laser Resurfacing</a></li>
+        <li><a href="#">Corneotherapy</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Clinics</div>
+      <ul class="footer-links">
+        <li><a href="#">First Mall, Four Seasons · Giza</a></li>
+        <li><a href="#">H1, 5A The Waterway · New Cairo</a></li>
+        <li><a href="tel:01003264266">📞 0100 326 4266</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Information</div>
+      <ul class="footer-links">
+        <li><a href="#">About SÓL</a></li>
+        <li><a href="#">The Journal</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 SÓL The Clinic. All rights reserved.</span>
+    <span class="footer-copy">Cairo · First Mall · The Waterway · Biological Regeneration</span>
+  </div>
+</footer>
+
+<!-- =========================================
+     MOBILE NAV
+     ========================================= -->
+<nav class="mobile-nav">
+  <div class="mobile-nav-inner">
+    <a href="#" class="mobile-nav-item active">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a href="#services" class="mobile-nav-item">
+      <i class="fa-solid fa-sparkles"></i>
+      <span>Services</span>
+    </a>
+    <a href="#clinics" class="mobile-nav-item">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>Clinics</span>
+    </a>
+    <a href="tel:01003264266" class="mobile-nav-item">
+      <i class="fa-regular fa-calendar"></i>
+      <span>Book</span>
+    </a>
+  </div>
+</nav>
+
+<!-- =========================================
+     JAVASCRIPT
+     ========================================= -->
+
+<!-- =========================================
+     SCRIPTS
+     ========================================= -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="sol.js"></script>
+
+</body>
+</html>
